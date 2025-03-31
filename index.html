@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Nawiri Investment Program with a one-time fee of Kshs 550 and grow your investment.">
+    <meta name="keywords" content="Nawiri, Investment, Program, Kenya, Join, Grow, Money">
+    <meta property="og:title" content="Nawiri Investment Program">
+    <meta property="og:description" content="Join Nawiri Investment Program with a one-time fee of Kshs 550 and grow your investment.">
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:url" content="https://nawiriinvestment.com">
+    <title>Nawiri Investment Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#join-section">Join</a></li>
+            <li><a href="#referral-section">Referrals</a></li>
+            <li><a href="#investment-section">Invest</a></li>
+            <li><a href="#withdrawal-section">Withdraw</a></li>
+            <li><a href="#faq-section">FAQs</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Nawiri Investment Program</h1>
+        <p>Join us today with a one-time sign-up fee of Kshs 550 and start growing your investment!</p>
+    </header>
+      <!-- Notification Area -->
+      <div id="notification-area"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Join Section -->
+        <section id="join-section">
+            <h2>Join Now</h2>
+            <p>Sign-Up Fee: <strong>Kshs 550</strong></p>
+            <form id="join-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" aria-label="Full Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" aria-label="Email Address" required>
+
+                <label for="phone">M-Pesa Phone Number:</label>
+                <input type="text" id="phone" name="phone" pattern="^07\d{8}$" aria-label="M-Pesa Phone Number" required>
+
+                <label for="payment">Payment Amount:</label>
+                <input type="text" id="payment" name="payment" value="Kshs 550" readonly>
+
+                <button type="submit">Proceed to Payment</button>
+            </form>
+            <p>After signing up, you can invest any amount you wish to grow your earnings!</p>
+        </section>
+
+        <!-- Submit Payment Proof Section -->
+        <section id="payment-proof-section">
+            <h2>Submit Payment Proof</h2>
+            <p>If you have completed your payment, please submit your transaction details for verification:</p>
+            <form id="payment-proof-form">
+                <label for="transaction-id">Transaction ID:</label>
+                <input type="text" id="transaction-id" name="transaction-id" required>
+
+                <label for="phone-number">Phone Number Used:</label>
+                <input type="text" id="phone-number" name="phone-number" pattern="^07\d{8}$" required>
+
+                <button type="submit">Submit Payment Proof</button>
+            </form>
+        </section>
+
+        <!-- Investment Section -->
+        <section id="investment-section">
+            <h2>Invest More</h2>
+            <p>Already signed up? Invest any amount to grow your earnings!</p>
+            <form id="investment-form">
+                <label for="invest-amount">Investment Amount (Kshs):</label>
+                <input type="number" id="invest-amount" name="invest-amount" min="1" required>
+                <button type="submit">Invest</button>
+            </form>
+            <div id="account-balance">
+                <h3>Your Account</h3>
+                <p>Total Investment: <span id="total-investment">Kshs 0</span></p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h3>How does the program work?</h3>
+                <p>We pool investments from users and allocate them to high-yield opportunities, generating returns for our members.</p>
+            </div>
+            <div class="faq">
+                <h3>Is there a minimum investment?</h3>
+                <p>The one-time sign-up fee is Kshs 550. After that, you can invest any amount you wish.</p>
+            </div>
+            <div class="faq">
+                <h3>Is there a maximum investment?</h3>
+                <p>No, you can invest any amount you're comfortable with.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I withdraw my earnings?</h3>
+                <p>You can request a withdrawal one month after joining, with a minimum of Kshs 1,000 per request.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@nawiriinvestment.com">info@nawiriinvestment.com</a></li>
+                <li>Phone: <a href="+254 708 077380">+254 708 077380</a></li>
+                <li>Whatsapp: <a href="https://chat.whatsapp.com/HnN1vuIz1GkF5ShLHiLBzl">https://chat.whatsapp.com/HnN1vuIz1GkF5ShLHiLBzl</a></li>
+                <li>Address: Nairobi, Kenya</li>
+            </ul>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews-section">
+            <h2>What Our Users Are Saying</h2>
+            <div class="review">
+                <img src="https://via.placeholder.com/50" alt="User Photo" loading="lazy">
+                <div class="review-text">
+                    <h4>James Kariuki</h4>
+                    <p>“This platform has completely transformed my finances! I made my first profit within a month, and it’s been consistent. Highly recommend!”</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/50" alt="User Photo" loading="lazy">
+                <div class="review-text">
+                    <h4>Moraa Grace</h4>
+                    <p>“At first, I was skeptical, but after referring a few friends, I saw my earnings grow. Definitely worth the try!”</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nawiri Investment Program. All rights reserved.</p>
+        <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
